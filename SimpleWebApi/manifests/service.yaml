@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-workflow
+  namespace: sample-app-namespace-1762965315660
+  labels:
+    app.kubernetes.io/name: simple-workflow
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app.kubernetes.io/name: simple-workflow
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

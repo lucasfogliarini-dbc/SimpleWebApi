@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: simple-workflow-config
+  namespace: sample-app-namespace-1762965315660
+  labels:
+    app.kubernetes.io/name: simple-workflow
+    kubernetes.azure.com/generator: devhub
+data:
