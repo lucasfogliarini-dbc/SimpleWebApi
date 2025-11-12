@@ -1,13 +1,13 @@
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
-  name: simple-workflow
+  name: simple-api
   labels:
-    app.kubernetes.io/name: simple-workflow
-    app.kubernetes.io/part-of: simple-workflow-project
+    app.kubernetes.io/name: simple-api
+    app.kubernetes.io/part-of: simple-api-project
     kubernetes.azure.com/generator: devhub
 spec:
   maxUnavailable: 1
   selector:
     matchLabels:
-      app: simple-workflow
+      app: simple-api

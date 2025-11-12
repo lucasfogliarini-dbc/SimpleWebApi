@@ -1,16 +1,16 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: simple-workflow
+  name: simple-api
   labels:
-    app.kubernetes.io/name: simple-workflow
-    app.kubernetes.io/part-of: simple-workflow-project
+    app.kubernetes.io/name: simple-api
+    app.kubernetes.io/part-of: simple-api-project
     kubernetes.azure.com/generator: devhub
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: simple-workflow
+    name: simple-api
   minReplicas: 1
   maxReplicas: 5
   metrics:
