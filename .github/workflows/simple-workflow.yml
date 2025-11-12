@@ -30,7 +30,7 @@
 # For more samples to get started with GitHub Action workflows to deploy to Azure, refer to https://github.com/Azure/actions-workflow-samples
 # For more options with the actions used below please refer to https://github.com/Azure/login
 
-name: simple-workflow
+name: simple-api-workflow
 
 on:
   push:
@@ -47,7 +47,7 @@ env:
   DEPLOYMENT_MANIFEST_PATH: ./SimpleWebApi/manifests
   DOCKER_FILE: ./SimpleWebApi/Dockerfile
   BUILD_CONTEXT_PATH: ./
-  NAMESPACE: sample-app-namespace-1762965315660
+  NAMESPACE: simple-api-namespace
   ENABLENAMESPACECREATION: false
   AUTH_TYPE: SERVICE_PRINCIPAL
 
